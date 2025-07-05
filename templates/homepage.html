@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinematic Odyssey</title>
+    <link rel="stylesheet" href="static/homepage.css">
+</head>
+
+<body>
+    <p id="username">Error</p>
+
+    <!-- <img src="Bard_Generated_Image.jpeg" style="width: auto; height: auto; position:fixed; top: 0;"> -->
+    <div class="banner">
+        <div class="navbar">
+            <img src="" class="logo">
+            <ul>
+                <!-- <li><a href="#">Begin</a></li> -->
+                <li><button id="button1" onclick="logout()"><span></span>Logout</button></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>Start Creating Your Videos</h1>
+            <p>Hey! Welcome to our Website.<br> Start creating your videos with our all new enhanced and customizable
+                features</p>
+            <div>
+                <a href="upload_page" target="_blank"><button type="button"><span></span>UPLOAD IMAGES</button></a>
+                <a href="video_cus_page" target="_blank"><button type="button"><span></span>CREATE VIDEO</button></a>
+            </div>
+        </div>
+    </div>
+    <div id="your-images">
+        <!-- <img src="Bard_Generated_Image(1).jpeg" class="images">
+        <img src="Bard_Generated_Image(2).jpeg" class="images">
+        <img src="Bard_Generated_Image(3).jpeg" class="images">
+        <img src="Bard_Generated_Image(1).jpeg" class="images">
+        <img src="Bard_Generated_Image(3).jpeg" class="images">
+        <img src="Bard_Generated_Image(2).jpeg" class="images">
+        <img src="Bard_Generated_Image(3).jpeg" class="images">
+        <img src="Bard_Generated_Image(1).jpeg" class="images"> -->
+        <div class="image_container"></div>
+        <!-- {% for image in upload_images %}
+            <img class="images" src="{{ image }}" alt="Uploaded Image">
+        {% endfor %} -->
+    </div>
+    <script src="static/homepage.js"></script>
+</body>
+
+</html>

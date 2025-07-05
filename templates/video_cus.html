@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/video_cus.css">
+    <title>Make Video</title>
+</head>
+
+<body>
+    <p id="username">Error</p>
+    <div class="main">
+        <div class="header">
+            <h1>Make Video</h1>
+        </div>
+        <div class="display-img">
+        </div>
+        <form class="queued-form">
+            <div class="header">
+                <h3>Selected Images</h3>
+            </div>
+            <div class="queue"></div>
+        </form>
+    </div>
+    <div class="video">
+        <p>BackgroundMusic :</p>
+        <input type="file" id="backgroundMusic" accept="audio/*" placeholder="click to add music">
+        <label for="imageDuration">Image Duration (in seconds):</label>
+        <input type="number" id="imageDuration" min="1" step="1" value="5">
+        <label for="transitionEffect">Transition Effect:</label>
+        <select id="transitionEffect">
+            <option value="fade">Fade</option>
+            <option value="slide">Slide</option>
+        </select>
+        <label for="audioeffect">Music:</label>
+        <select id="audioeffect">
+            <option value="Mad_song.mp3">Mad_song</option>
+            <option value="Mad_song2.mp3">Mad_song2</option>
+            <option value="Devara_BGM.mp3">Devara_BGM</option>
+            <option value="Jailer_song.mp3">Jailer_song</option>
+            <option value="Maayachesi_song.mp3">Maayachesi_song</option>
+            <option value="Karthikeya2_BGM.mp3">Karthikeya2_BGM</option>
+            <option value="Saalar_BGM.mp3">Saalar_BGM</option>
+        </select>
+        <label for="qualityeffect">Quality:</label>
+        <select id="qualityeffect">
+            <option value="144">144</option>
+            <option value="360">360</option>
+            <option value="480">480</option>
+            <option value="720">720</option>
+            <option value="1080">1080</option>
+        </select>
+        <br>
+        <button onclick="send_names()">Create Video</button><br>
+        <a href="/display_vid" target="_blank"><button>Preview Video</button><br>
+        <video width="800px" controls id="preview">
+            
+        </video><br>
+    </div>
+
+    <script src="static/video_cus.js"></script>
+</body>
+
+</html>

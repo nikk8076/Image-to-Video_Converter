@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/upload.css">
+    <title>Upload Images</title>
+</head>
+
+<body>
+    <p id="username">Error</p>
+    <div class="main">
+        <div class="header">
+            <h1>Upload Images</h1>
+        </div>
+        <label for="image" class="input-box">
+            <p>Drag & Drop Images or click to <span>Browse</span></p>
+            <input type="file" class="file" name="file" id="image" multiple="multiple" accept="image/png, image/jpg, image/jpeg"
+                hidden>
+        </label>
+        <form class="queued-form">
+            <div class="header">
+                <h3>Queued Images</h3>
+                <p>Click on upload to upload to your server.</p>
+            </div>
+            <div class="queue"></div>
+            <button type="button" onclick="uploadImages()">Upload</button>
+        </form>
+    </div>
+    <!-- <script src="upload.js"></script> -->
+    <script src="static/upload.js"></script>
+</body>
+
+</html>

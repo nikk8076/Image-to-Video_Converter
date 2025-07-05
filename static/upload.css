@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(2.png);
+    background-size: cover;
+}
+
+.main {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header {
+    text-align: center;
+    line-height: 25px;
+}
+
+.input-box {
+    width: 80%;
+    height: 200px;
+    border-radius: 30px;
+    border: 2px solid black;
+    margin-top: 10px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.input-box span {
+    color: black;
+    font-weight: bold;
+}
+
+.queued-form {
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.queue {
+    width: 80%;
+    min-height: 200px;
+    border-radius: 30px;
+    border: 2px solid black;
+    align-self: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: relative;
+    padding: 1%;
+}
+
+img {
+    height: 150px;
+    border-radius: 10px;
+}
+
+.queue .image {
+    /* height: 150px; */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.queue .image:nth-child(4n) {
+    margin-right: 0;
+}
+
+.queue .image span {
+    position: absolute;
+    top: -4px;
+    right: 4px;
+    cursor: pointer;
+    font-size: 30px;
+    color: black;
+}
+
+.queue .image span:hover {
+    font-size: 35px;
+    opacity: 0.8;
+}
+
+.queue .span--hidden {
+    visibility: hidden;
+}
+
+button {
+    padding: 10px;
+    width: 70px;
+    color: white;
+    font-family: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: black;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.5);
+    font-size: 0.9rem;
+    transition: 0.7s;
+}
+
+button:hover {
+    width: 90px;
+    transform: translate(0, 10%);
+}
+
+#username {
+    font-size: xx-large;
+    position: fixed;
+    top: 2vh;
+    left: 2vh;
+    z-index: 100;
+    border-color: aqua;
+}

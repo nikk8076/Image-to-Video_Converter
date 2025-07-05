@@ -1,0 +1,10 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.757),rgba(0, 0, 0, 0.672)), url(1.png);
+    background-size: cover;
+}
+h1 {
+    position: relative;
+    top: 40vh;
+    text-align: center;
+    color: white;
+}

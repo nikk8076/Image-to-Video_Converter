@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="static/authentication.css">
+</head>
+
+<body>
+    <div id="form">
+        <div id="action">
+            <button id="login" onclick="Login()">login</button>
+            <span>/</span>
+            <button id="signup" onclick="Signup()">sign up</button>
+        </div>
+        <form id="details">
+            <label for="name" class="Name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="name" required>
+            <label for="email" class="Email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email" required>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="password" required>
+            <button id="send" onclick="send_login()">Submit</button>
+        </form>
+    </div>
+    <script src="static/authentication.js"></script>
+</body>
+
+</html>
