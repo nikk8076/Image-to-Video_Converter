@@ -29,7 +29,6 @@ fetch('/display_images', {
             img_container.innerHTML = images;
         });
             // Handle success, e.g., redirect to homepage
-            
         })
         .catch(error => {
             // Handle error
@@ -43,5 +42,4 @@ fetch('/display_images', {
 //         body: JSON.stringify({ username})
 //     });
 //     const data = response.json();
-    // Iterate over the list and display each element
-    
+// Iterate over the list and display each element
